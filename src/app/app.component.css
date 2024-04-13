@@ -1,0 +1,122 @@
+/* Header Styling */
+.header {
+  background-color: #073040; /* Dark background color */
+  color: white;
+  padding: 10px;
+  position: fixed; /* Fix the header at the top of the page */
+  top: 0; /* Position it at the top */
+  width: 100%; /* Span the entire width of the viewport */
+  z-index: 1000; /* Ensure the header remains above other content */
+  display: flex;
+  align-items: center; /* Vertically center the content in the header */
+}
+
+/* Styling for the project name */
+.project-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2em;
+  color: white; /* Project name should stay white */
+}
+
+/* Styling for the star */
+.star {
+  font-size: 1em;
+  display: inline-block;
+  animation: blinkColors 2s infinite; /* Define the blinkColors animation */
+}
+
+@keyframes blinkColors {
+    0% {
+        color: white; /* White */
+    }
+    25% {
+        color: #bb4bd7; /* Violet */
+    }
+    50% {
+        color: #1996c8; /* Sky blue */
+    }
+    75% {
+        color: #53ff8c; /* Light green */
+    }
+    100% {
+        color: white; /* White */
+    }
+}
+
+/* Spacer to push navigation buttons to the right */
+.spacer {
+  flex: 1;
+}
+
+/* Navigation button styling */
+button[mat-button], button[mat-raised-button] {
+  margin: 0 10px;
+  /* Additional styles as needed */
+}
+
+/* Container styling */
+.container {
+    display: flex; /* Use flexbox layout */
+    margin-top: 64px; /* Adjust for fixed header height */
+    height: calc(100vh - 64px); /* Full height of the view minus the header */
+}
+
+/* Upload Section Styling */
+.upload-section {
+  width: 30%; /* 30% width for the upload section */
+  padding: 20px;
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column;
+  justify-content: flex-start; /* Start content from top */
+  align-items: center; /* Center content horizontally */
+  background-color: white;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
+  margin-right: 20px; /* Add space between sections */
+}
+
+/* Upload Box Styling */
+.upload-box {
+  width: 80%; /* Set width of the upload box */
+  height: 150px; /* Set height of the upload box */
+  border: 2px dashed #cccccc; /* Dashed border for upload area */
+  border-radius: 15px; /* Rounded corners */
+  display: flex; /* Use flexbox */
+  justify-content: center;
+  align-items: center; /* Center content */
+  flex-direction: column;
+  cursor: pointer; /* Cursor pointer style */
+  transition: border-color 0.2s ease-in-out; /* Smooth transition for border color */
+  margin-bottom: 20px; /* Add space between upload box and submit button */
+}
+
+/* Hover effect on upload box */
+.upload-box:hover {
+  border-color: #6200ea; /* Change border color on hover */
+}
+
+/* Dragging effects on upload box */
+.upload-box.dragging {
+  border-color: #6200ea; /* Change border color when dragging */
+}
+
+/* Submit button styling */
+button[mat-raised-button] {
+  width: 80%; /* Set width of the button */
+  padding: 10px; /* Add padding for button */
+}
+
+
+
+/* Tabs Section Styling */
+.tabs-section {
+  width: 70%; /* 70% width for the tabs section */
+  height: 100vh; /* Set a fixed height for the tabs section */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-color: white;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
+}
